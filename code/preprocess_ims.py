@@ -116,7 +116,7 @@ def combine_masks(processed_folder):
 
 
 def get_im_data(base_path):
-    folds = glob.glob(os.path.join(base_path, '*', '*'))
+    folds = glob.glob(os.path.join(base_path, '*'))
     indicator_dict = dict()
     
     is_val = lambda x: x.find('validation') != -1
